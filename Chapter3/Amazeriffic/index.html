@@ -1,18 +1,20 @@
 <!doctype html>
+<html lang="en">
 <html>
   <head>
     <title>Amazeriffic</title>
-    <link href="reset.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link href="semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <header>
       <div class="container">
-        <h1>Amazeriffic</h1>
+        <h1>Amazeriffic!</h1>
         <nav>
-          <a href="#">Sign Up!</a> |
-          <a href="#">FAQ</a> |
+          <a href="signup.html">Sign Up!</a> |
+          <a href="faq.html">FAQ</a> |
           <a href="#">Support</a>
         </nav>
       </div>
@@ -44,23 +46,31 @@
         <div class="left">
           <div class="contact">
             <h5>Contact Us</h5>
-            <p>Amazeriffic!</p>
+            <p class="address">Amazeriffic!</p>
             <p>555 Fiftieth Street</p>
             <p>Asheville, NC 28801</p>
           </div>
         </div>
         <div class="sitemap">
           <h5>Sitemap</h5>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
+            <table>
+              <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="#">About Us</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Privacy</a></td>
+                <td><a href="#">Support</a></td>
+              </tr>
+              <tr>
+                <td><a href="faq.html">FAQ</a></td>
+                <td><a href="#">Careers</a></td>
+              </tr>
+            </table>
         </div>
       </div>
     </footer>
+
+    <script src="semantic/dist/semantic.min.js"></script>
   </body>
 </html>
