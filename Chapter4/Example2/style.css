@@ -35,7 +35,7 @@ main {
 }
 
 
-.comment-input {
+.comment-input  {
   float: left;
   width: 285px;
 }
@@ -79,6 +79,52 @@ main {
 
 .comments p:nth-child(odd) {
     background: gainsboro;
+}
+
+.user-comment  {
+  float: left;
+  width: 285px;
+}
+
+.user-comment p {
+  margin-bottom: 10px;
+}
+
+.user-comment input {
+  width: 80%;
+  height: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.user-comment button {
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 5px;
+  color: ivory;
+  background: olivedrab;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+.comments-user {
+  float: right;
+  width: 570px;
+}
+
+.comments-user p {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.comments-user p:nth-child(even) {
+  background: pink;
+}
+
+.comments-user p:nth-child(odd) {
+  background: lightblue;
 }
 
 footer {

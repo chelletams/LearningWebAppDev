@@ -11,6 +11,13 @@ var main = function () {
             $new_comment.fadeIn();
             $(".comment-input input").val("");
         }
+        else if ($(".user-comment input").val() !== "") {
+            $new_comment = $("<p>").text($(".user-comment input").val());
+            $new_comment.hide();
+            $(".comments-user").append($new_comment);
+            $new_comment.fadeIn();
+            $(".user-comment input").val("");
+        }
     };
 
     $(".comment-input button").on("click", function (event) {
@@ -18,6 +25,16 @@ var main = function () {
     });
 
     $(".comment-input input").on("keypress", function (event) {
+        if (event.keyCode === 13) {
+            addCommentFromInputBox();
+        }
+    });
+
+    $(".user-comment button").on("click", function (event) {
+        addCommentFromInputBox();
+    });
+
+    $(".user-comment input").on("keypress", function (event) {
         if (event.keyCode === 13) {
             addCommentFromInputBox();
         }
