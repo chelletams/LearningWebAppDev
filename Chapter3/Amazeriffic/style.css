@@ -14,10 +14,14 @@ header .container, main .container, footer .container {
 header {
   background: white;
   overflow: auto;
+  padding: 20px;
 }
 
-header h1 {
+h1 {
   float: left;
+  color: red;
+  font-style: italic;
+  font-size: 250%;
   width: 570px;
 }
 
@@ -26,9 +30,15 @@ header nav {
   width: 285px;
 }
 
+header nav a {
+  color: red;
+  font-weight: bold;
+}
+
 main {
   background: white;
   overflow: auto;
+  padding: 30px;
 }
 
 main .left {
@@ -41,12 +51,55 @@ main .right {
   width: 285px;
 }
 
+main input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0px;
+}
+
+main .signup {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+}
+
+h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+
 footer .left {
   float: left;
   width: 570px;
 }
 
+footer p {
+  font-weight: bold;
+  line-height: 5px;
+}
+
+footer .address {
+  font-style: italic;
+  color: red;
+}
+
 footer .sitemap {
   float: right;
   width: 285px;
+}
+
+footer table {
+  text-align: left;
+  width: 100%;
+}
+
+footer td a {
+  color: red;
+  font-weight: bold;
 }
