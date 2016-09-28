@@ -4,71 +4,72 @@
     <title>Amazeriffic - Sign Up!</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link href="semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-  	<header>
-      <div class="container">
-        <h1>Sign Up!</h1>
-        <nav>
-          <a href="signup.html">Sign Up!</a> |
-          <a href="faq.html">FAQ</a> |
-          <a href="#">Support</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="left">
-          <div class="signup">
-            <h2>Create your new account</h2>
-              <form action="#" method="post">
-                <p>Username </p>
-                <p><input type="text" name="username"></p>
-                <p>Email </p>
-                <p><input type="text" name="email"></p>
-                <p>Password </p>
-                <p><input type="password" name="pass"></p>
-                <p>Confirm Password </p>
-                <p><input type="password" name="confirmation"></p>
-                <p><input type="submit" value="Submit"></p>
-              </form>
-            </div>
+        <h1 class="ui left aligned header">Sign Up!</h1>
+        <div class="ui pointing menu">
+          <a class="active item" href="signup.html">Sign Up!</a>
+          <a class="item" href="faq.html">FAQ</a>
+          <a class="item" href="#">Support</a>
         </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="container">
-        <div class="left">
-          <div class="contact">
-            <h5>Contact Us</h5>
-            <p class="address">Amazeriffic!</p>
-            <p>555 Fiftieth Street</p>
-            <p>Asheville, NC 28801</p>
+	<div class="ui main text container">
+          <h2 class="ui header">Create your new account</h2>
+          <div class="ui fluid form">
+            <div class="field">
+              <label>Username</label>
+              <div class="ui left icon input">
+                <input type="text" name="username" placeholder="Username">
+                <i class="user icon"></i>
+              </div>
           </div>
-        </div>
-        <div class="sitemap">
-          <h5>Sitemap</h5>
-            <table>
-              <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="#">About Us</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">Privacy</a></td>
-                <td><a href="#">Support</a></td>
-              </tr>
-              <tr>
-                <td><a href="faq.html">FAQ</a></td>
-                <td><a href="#">Careers</a></td>
-              </tr>
-            </table>
-        </div>
-      </div>
-    </footer>
+            <div class="field">
+              <label>Email</label>
+              <div class="ui left icon input">
+                <input type="text" name="email" placeholder="Email">
+                <i class="mail icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <div class="ui left icon input">
+                <input type="password" name="pass" placeholder="Password">
+                <i class="lock icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <label>Confirm Password</label>
+              <input type="password" name="confirmation" placeholder="Confirm Password">
+            </div>
+            <button class="ui teal button" type="submit">Submit</button>
+          </div>
+	</div>
+
+
+        <div class="ui inverted vertical footer segment">
+	  <div class="ui container">
+	    <div class="ui stackable inverted divided equal height stackable grid">
+	      <div class="seven wide column">
+              <h4 class="ui inverted header">Contact Us</h4>
+                <p class="address">Amazeriffic!</p>
+                <p>555 Fiftieth Street</p>
+                <p>Asheville, NC 28801</p>
+	      </div>
+             <div class="seven wide column">
+                <h4 class="ui inverted header">Sitemap</h4>
+	        <div class="ui inverted link list">
+		  <a href="index.html" class="item">Home</a>
+                  <a href="#" class="item">About Us</a>
+		  <a href="#" class="item">Privacy</a>
+		  <a href="#" class="item">Support</a>
+		  <a href="faq.html" class="item">FAQ</a>
+		  <a href="#" class="item">Careers</a>
+	        </div>
+             </div>
+	    </div>
+	   </div>
+         </div>
 
     <script src="semantic/dist/semantic.min.js"></script>
   </body>
